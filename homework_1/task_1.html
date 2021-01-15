@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 1</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        let tc = +prompt('Введите температуру в градусах Цельсия');        
+        (Number.isNaN(tc))
+            ? alert('Ошибка! Введено неверное значение.') 
+            : alert(`Температура в Фаренгейтах: ${(9 / 5) * tc + 32}`);
+    </script>
+</body>
+</html>
