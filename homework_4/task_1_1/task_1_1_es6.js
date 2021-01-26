@@ -1,9 +1,9 @@
 'use strict'
 
 class Product {
-    /** 
+    /**
     * @param {string} name Наименование товара
-    * @param {int} price Цена товара 
+    * @param {int} price Цена товара
     */
     constructor(name, price) {
         this.name = name;
@@ -18,7 +18,7 @@ class Product {
     }
 }
 
-const milk = new ProductES6('Молочко', 80);
+const milk = new Product('Молочко', 80);
 milk.make25PercentDiscount();
 
 console.log('Цена на молоко со скидкой 25%:', milk.price);

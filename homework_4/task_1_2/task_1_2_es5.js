@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 /**
  * Конструктор объекта Post
@@ -28,7 +28,8 @@ Post.prototype.edit = function(text) {
  */
 function AttachedPost(author, text, date) {
     Post.call(this, author, text, date);
-    
+    AttachedPost.prototype = Object.create(Post.prototype);
+
     this.highlighted = false;
 }
 

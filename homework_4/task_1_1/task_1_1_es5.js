@@ -1,8 +1,8 @@
 'use strict'
 
-/** 
+/**
  * @param {string} name Наименование товара
- * @param {int} price Цена товара 
+ * @param {int} price Цена товара
  */
 function Product(name, price) {
     this.name = name;
@@ -16,7 +16,7 @@ Product.prototype.make25PercentDiscount = function() {
     this.price *= 0.75;
 }
 
-const sausage = new ProductES5('Колбаса', 200);
+const sausage = new Product('Колбаса', 200);
 sausage.make25PercentDiscount();
 
 console.log('Цена на колбасу со скидкой 25%:', sausage.price);
